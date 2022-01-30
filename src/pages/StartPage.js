@@ -10,7 +10,7 @@ export default function StartPage (props) {
     return(
         <section className='startPage'>
             <h1 className='title'>Quizzical</h1>
-            <h2 className='description'>Some description here</h2>
+            <h2 className='description'>5 random questions will be selected with the chosen category</h2>
             <button className={`button-blue button-start ${props.loading && 'loading'}`} onClick={props.handleStart}>Start quiz</button>
             <select className='selectCategory button-blue' onChange={props.changeCategory}>
                 {options}
